@@ -153,6 +153,7 @@ intellij-idea-community-edition
 pycharm-community-edition
 neovim
 code
+codeblocks
 
 ## Desktop Env
 gdm
@@ -167,6 +168,8 @@ pavucontrol
 ## App
 kitty
 firefox
+steam
+obsidian
 
 ## Audio
 pipewire
@@ -180,6 +183,15 @@ nodejs
 npm
 base-devel
 polkit
+docker
+docker-compose
+kubectl
+jre-openjdk
+jdk-openjdk
+gcc
+mariadb
+mariadb-clients
+
 
 ## AUR Helper
 yay
