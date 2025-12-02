@@ -171,6 +171,7 @@ firefox
 steam
 obsidian
 fastfetch
+discord
 
 ## Audio
 pipewire
@@ -192,7 +193,7 @@ jdk-openjdk
 gcc
 mariadb
 mariadb-clients
-
+htop
 
 ## AUR Helper
 yay
