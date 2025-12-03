@@ -1,24 +1,24 @@
 ### Default Packages ###
 
 ## Base System
+amd-ucode
 base
+intel-ucode
 linux
 linux-firmware
 linux-firmware-marvell
-amd-ucode
-intel-ucode
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
 
 ## Bootloaders & Boot Utilities
-grub
-syslinux
-refind
-efibootmgr
 edk2-shell
+efibootmgr
+grub
 memtest86+
 memtest86+-efi
+refind
+syslinux
 
 ## Storage, Filesystems & Partitioning
 bcachefs-tools
@@ -89,20 +89,20 @@ xl2tpd
 
 ## Security
 libfido2
-pcsclite
 openpgp-card-tools
+pcsclite
+sequoia-sq
 tpm2-tools
 tpm2-tss
-sequoia-sq
 
 ## System Tools & Utilities
 arch-install-scripts
 archinstall
 clonezilla
 cryptsetup
+diffutils
 dmidecode
 dmraid
-diffutils
 foot-terminfo
 gpm
 grml-zsh-config
@@ -156,14 +156,21 @@ code
 codeblocks
 
 ## Desktop Env
+dbus
 gdm
 hyprland
-rofi-wayland
-wayland
-xdg-desktop-portal-hyprland
+hyprlock
+hyprpaper
+pavucontrol
 qt5-wayland
 qt6-wayland
-pavucontrol
+rofi-wayland
+seatd
+wayland
+wlroots
+xdg-desktop-portal
+xdg-desktop-portal-hyprland
+xorg-wayland
 
 ## App
 kitty
@@ -176,27 +183,33 @@ discord
 ## Audio
 pipewire
 wireplumber
+pipewire-pulse
 
 ## Shell & Devtools
-fish
-git
-python
-nodejs
-npm
 base-devel
-polkit
 docker
 docker-compose
-kubectl
-jre-openjdk
-jdk-openjdk
+fish
 gcc
+git
+htop
+jdk-openjdk
+jre-openjdk
+kubectl
 mariadb
 mariadb-clients
-htop
+nodejs
+npm
+polkit
+python
 
 ## AUR Helper
 yay
 
 ## Network / Storage
 open-iscsi
+mesa
+vulkan-radeon
+vulkan-tools
+foot
+polkit
