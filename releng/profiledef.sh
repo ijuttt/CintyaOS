@@ -1,19 +1,28 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="archlinux"
-iso_label="ARCH_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
-iso_publisher="Arch Linux <https://archlinux.org>"
-iso_application="Arch Linux Live/Rescue DVD"
-iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d)"
+iso_name="CintyaOS"
+iso_label="CINTYA_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
+iso_publisher="FANBOY CINTYA GARIS KERAS <https://github.com/ijuttt/CintyaOS>"
+iso_application="CintyaOS Live • Hyprland Coding Edition"
+iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d-%H%M)"
+
 install_dir="arch"
 buildmodes=('iso')
-bootmodes=('bios.syslinux'
-           'uefi.systemd-boot')
+bootmodes=(
+  'bios.syslinux.eltorito'
+  'bios.syslinux.disk'
+  'uefi-x64.systemd-boot.esp'
+  'uefi-x64.systemd-boot.eltorito'
+)
+
+arch="x86_64"
 pacman_conf="pacman.conf"
+packages_file="packages.x86_64"
+
 airootfs_image_type="squashfs"
-airootfs_image_tool_options=('-comp' 'xz' '-Xbcj' 'x86' '-b' '1M' '-Xdict-size' '1M')
-bootstrap_tarball_compression=('zstd' '-c' '-T0' '--auto-threads=logical' '--long' '-19')
+airootfs_image_tool_options=('-comp' 'zstd' '-Xcompression-level' '19' '-b' '1M')
+
 file_permissions=(
   ["/etc/shadow"]="0:0:400"
   ["/root"]="0:0:750"
