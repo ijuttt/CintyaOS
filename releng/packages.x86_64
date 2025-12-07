@@ -167,10 +167,9 @@ qt6-wayland
 rofi-wayland
 seatd
 wayland
-wlroots
 xdg-desktop-portal
 xdg-desktop-portal-hyprland
-xorg-wayland
+xorg-xwayland
 
 ## App
 kitty
@@ -194,7 +193,6 @@ gcc
 git
 htop
 jdk-openjdk
-jre-openjdk
 kubectl
 mariadb
 mariadb-clients
@@ -204,7 +202,6 @@ polkit
 python
 
 ## AUR Helper
-yay
 
 ## Network / Storage
 open-iscsi

@@ -10,8 +10,7 @@ iso_version="$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y.%m.%d-%H%M)"
 install_dir="arch"
 buildmodes=('iso')
 bootmodes=(
-	'bios.syslinux.eltorito'
-	'bios.syslinux.disk'
+	'bios.syslinux'
 	'uefi-x64.systemd-boot.esp'
 	'uefi-x64.systemd-boot.eltorito'
 )
