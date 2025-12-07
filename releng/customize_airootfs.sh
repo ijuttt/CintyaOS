@@ -13,8 +13,9 @@ usermod -aG seat,input,video,audio,wheel cintya
 
 passwd -d cintya
 
-echo "[*] enabling sudo for wheel group..."
-sed -i 's/^# %wheel ALL=(ALL:ALL) ALL/%wheel ALL=(ALL:ALL) ALL/' /etc/sudoers
+echo "[*] enabling sudo NOPASSWD for wheel group..."
+echo "%wheel ALL=(ALL:ALL) NOPASSWD: ALL" >/etc/sudoers.d/10-cintyaos
+chmod 440 /etc/sudoers.d/10-cintyaos
 
 echo "[*] fixing ownership for /home/cintya..."
 chown -R cintya:cintya /home/cintya
@@ -26,16 +27,19 @@ chmod +x /home/cintya/.config/hypr/initial-boot.sh 2>/dev/null || true
 chmod +x /home/cintya/.config/hypr/UserScripts/*.sh 2>/dev/null || true
 
 if [ -f /home/cintya/.config/fish/config.fish ]; then
-    chown cintya:cintya /home/cintya/.config/fish/config.fish
+	chown cintya:cintya /home/cintya/.config/fish/config.fish
 fi
 
 echo "[*] setting up polkit for non-root users..."
-cat > /etc/polkit-1/rules.d/50-default.rules << 'POLKIT'
+cat >/etc/polkit-1/rules.d/50-default.rules <<'POLKIT'
 polkit.addRule(function(action, subject) {
     if (subject.isInGroup("wheel")) {
         return polkit.Result.YES;
     }
 });
 POLKIT
+
+echo "[*] fixing wheel group entry..."
+sed -i '/^wheel:/ s/$/,cintya/' /etc/group || echo "wheel:x:10:cintya" >>/etc/group
 
 echo "[+] done"
