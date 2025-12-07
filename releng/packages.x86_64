@@ -19,25 +19,20 @@ memtest86+-efi
 refind
 syslinux
 ## Storage, Filesystems & Partitioning
-bcachefs-tools
 btrfs-progs
 cryptsetup
 ddrescue
 dosfstools
 e2fsprogs
 exfatprogs
-fatresize
-f2fs-tools
 fsarchiver
 gpart
 gptfdisk
 hdparm
-jfsutils
 lvm2
 mdadm
 mmc-utils
 mtools
-nilfs-utils
 ntfs-3g
 nvme-cli
 partclone
@@ -48,7 +43,6 @@ sg3_utils
 smartmontools
 squashfs-tools
 testdisk
-udftools
 xfsprogs
 ## Virtualization / Guest Additions
 qemu-guest-agent
@@ -56,12 +50,9 @@ virtualbox-guest-utils-nox
 open-vm-tools
 hyperv
 ## Networking
-bind
 bolt
 cloud-init
-darkhttpd
 dhcpcd
-dnsmasq
 ethtool
 iw
 iwd
@@ -72,11 +63,9 @@ nfs-utils
 nmap
 openconnect
 openssh
-openvpn
 ppp
 pptpclient
 tcpdump
-vpnc
 wireless-regdb
 wireless_tools
 wpa_supplicant
@@ -92,11 +81,9 @@ tpm2-tss
 ## System Tools & Utilities
 arch-install-scripts
 archinstall
-clonezilla
 diffutils
 dmidecode
 dmraid
-foot-terminfo
 gpm
 grml-zsh-config
 irssi
@@ -129,20 +116,12 @@ zsh
 b43-fwcutter
 broadcom-wl
 sof-firmware
-## Text Editor
-vim
-## Accesibility
-brltty
-espeakup
+
 ### Added ###
-intellij-idea-community-edition
-pycharm-community-edition
 neovim
 code
-codeblocks
 ## Desktop Env
 dbus
-gdm
 hyprland
 hyprlock
 hyprpaper
@@ -158,8 +137,6 @@ xorg-xwayland
 ## App
 kitty
 firefox
-steam
-obsidian
 fastfetch
 discord
 ## Audio
@@ -168,18 +145,9 @@ wireplumber
 pipewire-pulse
 ## Shell & Devtools
 base-devel
-docker
-docker-compose
 fish
-gcc
 git
-htop
-jdk-openjdk
 kubectl
-mariadb
-mariadb-clients
-nodejs
-npm
 polkit
 python
 ## AUR Helper
@@ -188,7 +156,6 @@ open-iscsi
 mesa
 vulkan-radeon
 vulkan-tools
-foot
 ## Hyprland Dependencies Missing
 swww
 swaync
