@@ -10,6 +10,7 @@ linux-firmware-marvell
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
+
 ## Bootloaders & Boot Utilities
 edk2-shell
 efibootmgr
@@ -18,6 +19,7 @@ memtest86+
 memtest86+-efi
 refind
 syslinux
+
 ## Storage, Filesystems & Partitioning
 btrfs-progs
 cryptsetup
@@ -44,11 +46,13 @@ smartmontools
 squashfs-tools
 testdisk
 xfsprogs
+
 ## Virtualization / Guest Additions
 qemu-guest-agent
 virtualbox-guest-utils-nox
 open-vm-tools
 hyperv
+
 ## Networking
 bolt
 cloud-init
@@ -71,6 +75,9 @@ wireless_tools
 wpa_supplicant
 wvdial
 xl2tpd
+networkmanager
+network-manager-applet
+
 ## Security
 libfido2
 openpgp-card-tools
@@ -78,6 +85,7 @@ pcsclite
 sequoia-sq
 tpm2-tools
 tpm2-tss
+
 ## System Tools & Utilities
 arch-install-scripts
 archinstall
@@ -111,20 +119,26 @@ usb_modeswitch
 usbmuxd
 usbutils
 xdg-utils
+xdg-user-dirs
 zsh
+
 ## Wireless / Broadband Firmware
 b43-fwcutter
 broadcom-wl
 sof-firmware
 
-### Added ###
+### Added Custom Packages ###
+
+## Editor & IDE
 neovim
 code
-## Desktop Env
+
+## Desktop Environment - Hyprland
 dbus
 hyprland
 hyprlock
 hyprpaper
+hypridle
 pavucontrol
 qt5-wayland
 qt6-wayland
@@ -134,44 +148,63 @@ wayland
 xdg-desktop-portal
 xdg-desktop-portal-hyprland
 xorg-xwayland
-## App
-kitty
-firefox
-fastfetch
-discord
-## Audio
-pipewire
-wireplumber
-pipewire-pulse
-## Shell & Devtools
-base-devel
-fish
-git
-kubectl
-polkit
-python
-## AUR Helper
-## Network / Storage
-open-iscsi
-mesa
-vulkan-radeon
-vulkan-tools
-## Hyprland Dependencies Missing
+
+## Hyprland Dependencies & Utilities
 swww
 swaync
 cliphist
 wl-clipboard
-network-manager-applet
 blueman
+bluez
+bluez-utils
 grim
 slurp
 swappy
 brightnessctl
 playerctl
+waybar
+
+## Theme & Appearance
 kvantum
 qt5ct
 qt6ct
 nwg-look
 python-pywal
 imagemagick
+gnome-themes-extra
+gtk3
+gtk4
+gsettings-desktop-schemas
+
+## System
+polkit
 polkit-gnome
+
+## Applications
+kitty
+firefox
+fastfetch
+discord
+
+## Audio
+pipewire
+wireplumber
+pipewire-pulse
+pipewire-alsa
+pipewire-jack
+
+## Shell & Development Tools
+base-devel
+fish
+git
+kubectl
+python
+
+## Graphics
+mesa
+vulkan-radeon
+vulkan-intel
+vulkan-tools
+
+## Network / Storage
+open-iscsi

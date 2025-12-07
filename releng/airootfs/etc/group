@@ -1,0 +1,16 @@
+root:x:0:root
+bin:x:1:daemon
+daemon:x:2:
+sys:x:3:
+adm:x:4:
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mem:x:8:
+kmem:x:9:
+wheel:x:10:cintya
+audio:x:92:cintya
+video:x:93:cintya
+input:x:97:cintya
+seat:x:998:cintya
+cintya:x:1000:
