@@ -210,3 +210,24 @@ vulkan-radeon
 vulkan-tools
 foot
 polkit
+
+## Hyprland Dependencies Missing
+swww
+swaync
+cliphist
+wl-clipboard
+network-manager-applet
+blueman
+grim
+slurp
+swappy
+brightnessctl
+playerctl
+wallust
+kvantum
+qt5ct
+qt6ct
+nwg-look
+python-pywal
+imagemagick
+polkit-gnome
